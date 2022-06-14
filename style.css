@@ -368,6 +368,29 @@
     padding: 0 80px;
   }
 
+  /*HEADER*/
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .logo{
+    width: 80px;
+  }
+
+  .carrinho_menu::after{
+    content: "";
+    display: inline-block;
+    background: url("./assets/carrinho.svg") no-repeat center center;
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+  }
+
   /*LISTA PRODUTOS*/
 
   .produtos{
@@ -481,6 +504,10 @@
   }
 
   .modal_btn:active, .modal_btn:hover{
+    background: #808080;
+  }
+
+  .modal_btn.esgotado{
     background: #808080;
   }
 
